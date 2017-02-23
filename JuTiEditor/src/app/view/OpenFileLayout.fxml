@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0"
+	minHeight="35.0" spacing="25.0" stylesheets="@../app.css" styleClass="openFileBox"
+	xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
+	fx:controller="app.OpenFileController">
+	<children>
+		<VBox alignment="CENTER" spacing="30.0">
+			<children>
+				<Label text="Choose text file..." />
+				<TextField fx:id="pathOfFile" prefHeight="30.0" prefWidth="150.0" />
+				<Button mnemonicParsing="false" onAction="#handleBrowse"
+					text="Browse" />
+			</children>
+		</VBox>
+		<VBox alignment="CENTER" spacing="10.0">
+			<children>
+
+				<Button mnemonicParsing="false" onAction="#handleAppend"
+					text="Append" />
+				<Button mnemonicParsing="false" onAction="#handleReplace"
+					text="Replace" />
+			</children>
+			<padding>
+				<Insets />
+			</padding>
+		</VBox>
+	</children>
+</HBox>
